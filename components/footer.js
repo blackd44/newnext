@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
         <footer>
-            @blackd44 2022
+            blackd44 © 2022
         </footer>
     );
 }
