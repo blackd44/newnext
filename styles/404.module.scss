@@ -1,0 +1,14 @@
+.main {
+    text-align: center;
+
+    a {
+        color: #f90;
+        text-decoration: underline;
+    }
+
+    h1,
+    h2,
+    h3 {
+        all: revert
+    }
+}

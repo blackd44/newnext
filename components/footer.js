@@ -1,7 +1,9 @@
+import Link from 'next/link'
+
 const Footer = () => {
     return (
         <footer>
-            blackd44 © 2022
+            © {new Date().getFullYear()} <Link href='/'>Strikers</Link>
         </footer>
     );
 }

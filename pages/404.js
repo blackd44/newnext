@@ -1,17 +1,23 @@
 import Link from 'next/link'
+import { useEffect } from 'react';
+import { useRouter } from 'next/router'
+import style from '../styles/404.module.scss'
 
 const NotFound = () => {
-    let style = {
-        textAlign: 'center'
-    }
-    let link = {
-        color: '#f90',
-    }
+    const router = useRouter()
+
+    useEffect(() => {
+        setTimeout(() => {
+            //router.back()
+            router.push('/')
+        }, 5000);
+    }, [])
+
     return (
-        <main style={style}>
+        <main className={style.main}>
             <h1>Oooops.....</h1>
             <h1>404 / Page Not Found.</h1>
-            <p>Go back to <Link href='/' style={link}>HomePage</Link>
+            <p>Go back to <Link href='/' className={style.link}>HomePage</Link>
             </p>
         </main>
     );

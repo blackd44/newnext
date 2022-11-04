@@ -10,12 +10,20 @@
 
 a {
   text-decoration: none;
-  color: initial;
+  color: inherit;
+}
+
+body,
+html {
+  background-color: #eee;
 }
 
 body {
   padding: 0 $side-space;
-  background-color: #eee;
+}
+
+main {
+  padding: 2rem 0 3rem;
 }
 
 nav {
@@ -43,7 +51,7 @@ nav {
       padding: 0 2rem 0.3rem;
       color: $color;
       transition: .2s ease;
-      border-bottom: 1px solid transparent;
+      border-bottom: 0 solid transparent;
       text-transform: capitalize;
     }
 
@@ -62,4 +70,10 @@ nav {
       padding-bottom: .7rem;
     }
   }
+}
+
+footer {
+  color: #888;
+  text-align: center;
+  padding: 0 0 2rem;
 }

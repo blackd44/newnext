@@ -10,7 +10,7 @@ const NavBar = () => {
             <div className="logo">Strikers</div>
             <ul className="menu">
                 <Link className={router.pathname == "/" ? "active" : ""} href='/'><li>home</li></Link>
-                <Link className={router.pathname == "/strikers" ? "active" : ""} href='/strikers'><li>strikers</li></Link>
+                <Link className={router.pathname.includes("/strikers") ? "active" : ""} href='/strikers'><li>team</li></Link>
                 <Link className={router.pathname == "/about" ? "active" : ""} href='/about'><li>about</li></Link>
             </ul>
         </nav>

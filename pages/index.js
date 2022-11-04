@@ -4,8 +4,13 @@ import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
-    <h1>
-      helloooo
-    </h1>
+    <>
+      <Head>
+        <title>Strikers</title>
+      </Head>
+      <main>
+        <h1>helloooo</h1>
+      </main>
+    </>
   )
 }
