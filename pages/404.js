@@ -9,7 +9,7 @@ const NotFound = () => {
     useEffect(() => {
         setTimeout(() => {
             //router.back()
-            router.push('/')
+            router.replace('/')
         }, 5000);
     }, [])
 

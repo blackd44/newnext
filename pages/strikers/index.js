@@ -1,4 +1,4 @@
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 
     //fetching data form api
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -22,9 +22,10 @@ const Strikers = ({ strikers }) => {
             <main>
                 <h1>Out Team</h1>
                 {strikers.map(striker => (
-                    <Link href={'/strikers/' + striker.id} key={striker.id} className={style.a}>
+                    <Link href={`/strikers/${striker.username}`} key={striker.id} className={style.a}>
                         <div>
-                            {striker.username}
+                            <h3>{striker.name}</h3>
+                            <p>{striker.username}</p>
                         </div>
                     </Link>
                 ))}

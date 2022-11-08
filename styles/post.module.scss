@@ -1,0 +1,23 @@
+.a_item {
+    >div {
+        margin: 1rem 0;
+        padding: 1.5rem 2rem;
+        border-left: 1rem solid #0000;
+        box-shadow: 0 3px 7px -3px #0005;
+        background-color: #0000;
+    }
+
+    >div:hover {
+        border-left: 1rem solid #fa0;
+        background-color: #fff5;
+        box-shadow: 0 3px 7px -3px #0007;
+    }
+}
+
+.a_item:first-of-type,
+.a_item:last-of-type {
+
+    div {
+        margin: 0;
+    }
+}

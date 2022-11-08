@@ -2,7 +2,7 @@
     >div {
         box-shadow: 0 2px 4px -2px #0005;
         margin: 1rem 0;
-        padding: 2rem;
+        padding: 1.5rem 2rem;
         background-color: #fff8;
         border-left: 1rem solid transparent;
     }
@@ -11,5 +11,11 @@
         border-left-color: #fa0;
         background-color: #fffc;
         box-shadow: 0 2px 4px -2px #0008;
+    }
+
+    h1,
+    h2,
+    h3 {
+        margin: 0 0 .5rem;
     }
 }

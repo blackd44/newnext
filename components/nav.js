@@ -7,9 +7,11 @@ const NavBar = () => {
 
     return (
         <nav>
-            <div className="logo">Strikers</div>
+            <div className="logo">
+                <Link href='/'>Strikers</Link>
+            </div>
             <ul className="menu">
-                <Link className={router.pathname == "/" ? "active" : ""} href='/'><li>home</li></Link>
+                <Link className={router.pathname.includes("/posts") ? "active" : ""} href='/posts'><li>posts</li></Link>
                 <Link className={router.pathname.includes("/strikers") ? "active" : ""} href='/strikers'><li>team</li></Link>
                 <Link className={router.pathname == "/about" ? "active" : ""} href='/about'><li>about</li></Link>
             </ul>
