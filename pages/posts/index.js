@@ -3,9 +3,9 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import style from "../../styles/post.module.scss"
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
 
-    const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+    const res = await fetch('http://localhost:4000/api/posts')
     const data = await res.json()
 
     return {
